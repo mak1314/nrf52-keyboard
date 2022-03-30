@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CONF_PRODUCT_ID 0x031A /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0000 /* 硬件版本 */
 #define MANUFACTURER "Lotlab" /* 硬件制造商，用于蓝牙显示 */
-#define PRODUCT "GT PAD" /* 硬件名词，用于蓝牙显示 */
+#define PRODUCT "mm PAD" /* 硬件名词，用于蓝牙显示 */
 #define MACADDR_SEPRATOR ' ' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
 /* USB HID report parameter */
@@ -111,7 +111,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define PIN_STANDBY !UCC2
 
 // 多用途 Bootloader 按钮
-#define NRF_BL_DFU_MULTI_ROLE_BTN 21
+//#define NRF_BL_DFU_MULTI_ROLE_BTN 21
 // Bootloader指示灯
 #define LED_DFU_INIT 5
 #define LED_DFU_START 4
@@ -127,10 +127,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #if defined(TEST)
 static const uint8_t row_pin_array[MATRIX_ROWS] = {30, 31, 27, 28, 29};
-static const uint8_t column_pin_array[MATRIX_COLS] = {11, 12, 13, 14, 10};
+static const uint8_t column_pin_array[MATRIX_COLS] = {11, 12, 15, 16, 19};
 #else
 static const uint8_t row_pin_array[MATRIX_ROWS] = {30, 31, 29, 26, 28};
-static const uint8_t column_pin_array[MATRIX_COLS] = {11, 12, 13, 14, 10};
+static const uint8_t column_pin_array[MATRIX_COLS] = {11, 12, 15, 16, 19};
 #endif
 
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
