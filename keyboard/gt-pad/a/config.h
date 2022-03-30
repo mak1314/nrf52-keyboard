@@ -71,16 +71,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define LED_CAPS 4  //caps led ：5 ； led1、2、3、4：19、20、27、26
 
 // ws2812 RGB 配置
-#define RGB_DI_PIN 1
+#define RGB_DI_PIN 25
 #define RGBLED_NUM 8
 #define RGBLIGHT_ANIMATIONS
 #define RGB_PWR_PIN 0 // P-mos
 //#define RGB_PWR_PIN_REVERSE 12 // N-mos
 
 // 3灯指示配置引脚
-// #define LED_STATUS_BLE 19
+// #define LED_STATUS_BLE 17
 // #define LED_STATUS_CHARGING 18
-// #define LED_STATUS_USB 20
+// #define LED_STATUS_USB 17
 // #define LED_BLE_CHANNEL1 19
 // #define LED_BLE_CHANNEL2 20
 // #define LED_BLE_CHANNEL3 18
@@ -115,7 +115,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Bootloader指示灯
 #define LED_DFU_INIT 5
 #define LED_DFU_START 4
-#define LED_DFU_FINISH 3
+#define LED_DFU_FINISH 17
 
 // 按键阵列配置
 #define MATRIX_ROWS 5 /* 硬件阵列行数 */
@@ -145,8 +145,8 @@ static const uint8_t column_pin_array[MATRIX_COLS] = {11, 12, 15, 16, 19};
 // 独立旋钮按键  用于关机后开机
 #define ROTARY_BUTTON 10
 // SSD1306 LCD屏幕
-#define SSD1306_SDA 25
-#define SSD1306_SCL 27
+#define SSD1306_SDA 23
+#define SSD1306_SCL 24
 
 /* define if matrix has ghost */
 // #define MATRIX_HAS_GHOST /* 按键阵列是否出现Ghost Key，若没有加二极管则需要启用这个项目 */
